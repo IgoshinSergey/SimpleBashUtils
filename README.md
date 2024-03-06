@@ -53,6 +53,17 @@
    * `make clean` - Удаление ненужных, временных файлов
    * `make rebuild` - Сборка проекта заного
 
+### Examples
+
+`s21_cat`
+'''bash
+./s21_cat -n test/test.txt
+'''
+`s21_grep`
+'''bash
+./s21_grep -iv int test/test_grep.txt
+'''
+
 ### Information
 
 * Программы разработаны на языке Си стандарта C11 с использованием компилятора gcc
