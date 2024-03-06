@@ -50,19 +50,19 @@
 3. Остальные цели:
    * `make test` - Покрытие интеграционными тестами для всех вариантов флагов и входных значений
    * `make clang` - Проверка кода на Google style
-   * `make clean` - Удаление ненужных, временных файлов
+   * `make clean` - Удаление ненужных файлов
    * `make rebuild` - Сборка проекта заного
 
 ### Examples
 
 `s21_cat`
-'''bash
+```bash
 ./s21_cat -n test/test.txt
-'''
+```
 `s21_grep`
-'''bash
+```bash
 ./s21_grep -iv int test/test_grep.txt
-'''
+```
 
 ### Information
 
