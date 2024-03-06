@@ -1,0 +1,22 @@
+CC = gcc
+FLAGS =-Wall -Wextra -Werror
+
+all: s21_cat rebuild test clang clean
+
+s21_cat: clean
+	$(CC) $(FLAGS) s21_cat.c -o s21_cat
+
+test: clean
+	bash test_cat.sh
+
+clean:
+	rm -rf *.o s21_cat
+
+rebuild: clean s21_cat
+
+clang:
+	cp ../../materials/linters/.clang-format .
+	clang-format -n *.c *.h
+	rm .clang-format
+
+.PHONY: s21_cat clean rebuild clang test
