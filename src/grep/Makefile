@@ -15,8 +15,6 @@ clean:
 rebuild: clean s21_grep
 
 clang:
-	cp ../../materials/linters/.clang-format .
 	clang-format -n *.c *.h
-	rm .clang-format
 
 .PHONY: s21_grep clean rebuild clang test
