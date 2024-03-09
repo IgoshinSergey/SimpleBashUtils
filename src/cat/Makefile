@@ -15,8 +15,6 @@ clean:
 rebuild: clean s21_cat
 
 clang:
-	cp ../../materials/linters/.clang-format .
 	clang-format -n *.c *.h
-	rm .clang-format
 
 .PHONY: s21_cat clean rebuild clang test
